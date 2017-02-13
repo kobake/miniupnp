@@ -6,7 +6,7 @@ build/
 *.dll
 *.dylib
 Makefile.bak
-miniupnpcstrings.h
+# miniupnpcstrings.h
 pythonmodule
 pythonmodule3
 upnpc-shared
@@ -30,3 +30,6 @@ testigddescparse
 validateigddescparse
 dist/
 miniupnpc.egg-info/
+
+CMakeCache.txt
+CMakeFiles

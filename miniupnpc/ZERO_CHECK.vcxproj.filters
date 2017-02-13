@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\CMakeFiles\752e8a97c6af031d9215a0623c740f9f\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{618CB0F0-AB71-3454-BFA0-D8CE8D28BE49}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

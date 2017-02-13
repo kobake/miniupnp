@@ -1,0 +1,410 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{7DA2460B-22E0-389E-94D3-D017441856B8}</ProjectGUID>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>upnpc-shared</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">upnpc-shared.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">miniupnpc</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">upnpc-shared.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">miniupnpc</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">upnpc-shared.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">miniupnpc</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">upnpc-shared.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">miniupnpc</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_WIN32_WINNT=0x0501;CMAKE_INTDIR="Debug";upnpc_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_WIN32_WINNT=0x0501;CMAKE_INTDIR=\"Debug\";upnpc_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:\Program Files (x86)\Windows Kits\10\Lib\10.0.14393.0\um\x86\WS2_32.Lib;C:\Program Files (x86)\Windows Kits\10\Lib\10.0.14393.0\um\x86\iphlpapi.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Projects/nuget/miniupnp-vc140-nuget/miniupnpc/Debug/miniupnpc.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Projects/nuget/miniupnp-vc140-nuget/miniupnpc/Debug/miniupnpc.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0501;CMAKE_INTDIR="Release";upnpc_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0501;CMAKE_INTDIR=\"Release\";upnpc_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:\Program Files (x86)\Windows Kits\10\Lib\10.0.14393.0\um\x86\WS2_32.Lib;C:\Program Files (x86)\Windows Kits\10\Lib\10.0.14393.0\um\x86\iphlpapi.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Projects/nuget/miniupnp-vc140-nuget/miniupnpc/Release/miniupnpc.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Projects/nuget/miniupnp-vc140-nuget/miniupnpc/Release/miniupnpc.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0501;CMAKE_INTDIR="MinSizeRel";upnpc_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0501;CMAKE_INTDIR=\"MinSizeRel\";upnpc_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:\Program Files (x86)\Windows Kits\10\Lib\10.0.14393.0\um\x86\WS2_32.Lib;C:\Program Files (x86)\Windows Kits\10\Lib\10.0.14393.0\um\x86\iphlpapi.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Projects/nuget/miniupnp-vc140-nuget/miniupnpc/MinSizeRel/miniupnpc.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Projects/nuget/miniupnp-vc140-nuget/miniupnpc/MinSizeRel/miniupnpc.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0501;CMAKE_INTDIR="RelWithDebInfo";upnpc_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0501;CMAKE_INTDIR=\"RelWithDebInfo\";upnpc_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:\Program Files (x86)\Windows Kits\10\Lib\10.0.14393.0\um\x86\WS2_32.Lib;C:\Program Files (x86)\Windows Kits\10\Lib\10.0.14393.0\um\x86\iphlpapi.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Projects/nuget/miniupnp-vc140-nuget/miniupnpc/RelWithDebInfo/miniupnpc.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Projects/nuget/miniupnp-vc140-nuget/miniupnpc/RelWithDebInfo/miniupnpc.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Projects/nuget/miniupnp-vc140-nuget/miniupnpc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\P\CMake\bin\cmake.exe -HC:/Projects/nuget/miniupnp-vc140-nuget/miniupnpc -BC:/Projects/nuget/miniupnp-vc140-nuget/miniupnpc --check-stamp-file C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Projects/nuget/miniupnp-vc140-nuget/miniupnpc/CMakeLists.txt;C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\CMakeLists.txt;C:\P\CMake\share\cmake-3.7\Modules\CMakeDetermineSystem.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeSystem.cmake.in;C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\CMakeFiles\3.7.2\CMakeSystem.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeDetermineCCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeDetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeDetermineCompilerId.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeCompilerIdDetection.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\GNU-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\TI-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\P\CMake\share\cmake-3.7\Modules\CompilerId\VS-10.vcxproj.in;C:\P\CMake\share\cmake-3.7\Modules\CMakeFindBinUtils.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeCCompiler.cmake.in;C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\CMakeFiles\3.7.2\CMakeCCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;C:\P\CMake\share\cmake-3.7\Modules\Platform\Windows.cmake;C:\P\CMake\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeCInformation.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\P\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;C:\P\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeDetermineRCCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeRCCompiler.cmake.in;C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\CMakeFiles\3.7.2\CMakeRCCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeRCInformation.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeTestRCCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeTestCCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeTestCompilerCommon.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeDetermineCompilerABI.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeParseImplicitLinkInfo.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeCCompilerABI.c;C:\P\CMake\share\cmake-3.7\Modules\CMakeDetermineCompileFeatures.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeCCompiler.cmake.in;C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\CMakeFiles\3.7.2\CMakeCCompiler.cmake;C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\miniupnpcstrings.h.cmake;C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Projects/nuget/miniupnp-vc140-nuget/miniupnpc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\P\CMake\bin\cmake.exe -HC:/Projects/nuget/miniupnp-vc140-nuget/miniupnpc -BC:/Projects/nuget/miniupnp-vc140-nuget/miniupnpc --check-stamp-file C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Projects/nuget/miniupnp-vc140-nuget/miniupnpc/CMakeLists.txt;C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\CMakeLists.txt;C:\P\CMake\share\cmake-3.7\Modules\CMakeDetermineSystem.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeSystem.cmake.in;C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\CMakeFiles\3.7.2\CMakeSystem.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeDetermineCCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeDetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeDetermineCompilerId.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeCompilerIdDetection.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\GNU-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\TI-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\P\CMake\share\cmake-3.7\Modules\CompilerId\VS-10.vcxproj.in;C:\P\CMake\share\cmake-3.7\Modules\CMakeFindBinUtils.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeCCompiler.cmake.in;C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\CMakeFiles\3.7.2\CMakeCCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;C:\P\CMake\share\cmake-3.7\Modules\Platform\Windows.cmake;C:\P\CMake\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeCInformation.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\P\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;C:\P\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeDetermineRCCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeRCCompiler.cmake.in;C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\CMakeFiles\3.7.2\CMakeRCCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeRCInformation.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeTestRCCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeTestCCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeTestCompilerCommon.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeDetermineCompilerABI.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeParseImplicitLinkInfo.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeCCompilerABI.c;C:\P\CMake\share\cmake-3.7\Modules\CMakeDetermineCompileFeatures.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeCCompiler.cmake.in;C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\CMakeFiles\3.7.2\CMakeCCompiler.cmake;C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\miniupnpcstrings.h.cmake;C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Projects/nuget/miniupnp-vc140-nuget/miniupnpc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\P\CMake\bin\cmake.exe -HC:/Projects/nuget/miniupnp-vc140-nuget/miniupnpc -BC:/Projects/nuget/miniupnp-vc140-nuget/miniupnpc --check-stamp-file C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Projects/nuget/miniupnp-vc140-nuget/miniupnpc/CMakeLists.txt;C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\CMakeLists.txt;C:\P\CMake\share\cmake-3.7\Modules\CMakeDetermineSystem.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeSystem.cmake.in;C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\CMakeFiles\3.7.2\CMakeSystem.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeDetermineCCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeDetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeDetermineCompilerId.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeCompilerIdDetection.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\GNU-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\TI-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\P\CMake\share\cmake-3.7\Modules\CompilerId\VS-10.vcxproj.in;C:\P\CMake\share\cmake-3.7\Modules\CMakeFindBinUtils.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeCCompiler.cmake.in;C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\CMakeFiles\3.7.2\CMakeCCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;C:\P\CMake\share\cmake-3.7\Modules\Platform\Windows.cmake;C:\P\CMake\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeCInformation.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\P\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;C:\P\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeDetermineRCCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeRCCompiler.cmake.in;C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\CMakeFiles\3.7.2\CMakeRCCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeRCInformation.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeTestRCCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeTestCCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeTestCompilerCommon.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeDetermineCompilerABI.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeParseImplicitLinkInfo.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeCCompilerABI.c;C:\P\CMake\share\cmake-3.7\Modules\CMakeDetermineCompileFeatures.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeCCompiler.cmake.in;C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\CMakeFiles\3.7.2\CMakeCCompiler.cmake;C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\miniupnpcstrings.h.cmake;C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Projects/nuget/miniupnp-vc140-nuget/miniupnpc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\P\CMake\bin\cmake.exe -HC:/Projects/nuget/miniupnp-vc140-nuget/miniupnpc -BC:/Projects/nuget/miniupnp-vc140-nuget/miniupnpc --check-stamp-file C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Projects/nuget/miniupnp-vc140-nuget/miniupnpc/CMakeLists.txt;C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\CMakeLists.txt;C:\P\CMake\share\cmake-3.7\Modules\CMakeDetermineSystem.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeSystem.cmake.in;C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\CMakeFiles\3.7.2\CMakeSystem.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeDetermineCCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeDetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeDetermineCompilerId.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeCompilerIdDetection.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\GNU-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\TI-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\P\CMake\share\cmake-3.7\Modules\CompilerId\VS-10.vcxproj.in;C:\P\CMake\share\cmake-3.7\Modules\CMakeFindBinUtils.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeCCompiler.cmake.in;C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\CMakeFiles\3.7.2\CMakeCCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;C:\P\CMake\share\cmake-3.7\Modules\Platform\Windows.cmake;C:\P\CMake\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeCInformation.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\P\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;C:\P\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeDetermineRCCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeRCCompiler.cmake.in;C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\CMakeFiles\3.7.2\CMakeRCCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeRCInformation.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeTestRCCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeTestCCompiler.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeTestCompilerCommon.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeDetermineCompilerABI.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeParseImplicitLinkInfo.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeCCompilerABI.c;C:\P\CMake\share\cmake-3.7\Modules\CMakeDetermineCompileFeatures.cmake;C:\P\CMake\share\cmake-3.7\Modules\CMakeCCompiler.cmake.in;C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\CMakeFiles\3.7.2\CMakeCCompiler.cmake;C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\miniupnpcstrings.h.cmake;C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\igd_desc_parse.c" >
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\miniupnpc.c" >
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\minixml.c" >
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\minisoap.c" >
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\minissdpc.c" >
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\miniwget.c" >
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\upnpc.c" >
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\upnpcommands.c" >
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\upnpdev.c" >
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\upnpreplyparse.c" >
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\upnperrors.c" >
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\connecthostport.c" >
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\portlistingparse.c" >
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Projects\nuget\miniupnp-vc140-nuget\miniupnpc\receivedata.c" >
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">MINIUPNP_STATICLIB;MINIUPNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Projects/nuget/miniupnp-vc140-nuget/miniupnpc/ZERO_CHECK.vcxproj">
+      <Project>3B324E24-CC14-3695-9501-73F7AB95F42D</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
