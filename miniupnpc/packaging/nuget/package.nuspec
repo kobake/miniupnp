@@ -3,7 +3,7 @@
     <metadata minClientVersion="2.5">
         <id>miniupnpc-vc140</id>
         <title>miniupnpc-vc140</title>
-        <version>2.0.0.0</version>
+        <version>2.0.0.1</version>
         <authors>Thomas BERNARD</authors>
         <owners>kobake</owners>
         <licenseUrl>https://raw.githubusercontent.com/miniupnp/miniupnp/master/miniupnpc/LICENSE</licenseUrl>
@@ -11,7 +11,7 @@
         <requireLicenseAcceptance>true</requireLicenseAcceptance>
         <summary>miniupnpc library packaged for Visual Studio 2015 (msvc14). This library is experimental, so use at your own risk.</summary>
         <description>The MiniUPnP project offers software which supports the UPnP Internet Gateway Device (IGD) specifications.</description>
-        <releaseNotes>First edition.</releaseNotes>
+        <releaseNotes>Excluded main function.</releaseNotes>
         <copyright>Copyright (c) 2005-2016, Thomas BERNARD</copyright>
         <tags>native, miniupnp, miniupnpc, C++</tags>
         <dependencies>
