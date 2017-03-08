@@ -534,7 +534,7 @@ RemovePinhole(struct UPNPUrls * urls,
 
 
 /* sample upnp client program */
-int main(int argc, char ** argv)
+int main_sample_upnp_client(int argc, char ** argv)
 {
 	char command = 0;
 	char ** commandargv = 0;
